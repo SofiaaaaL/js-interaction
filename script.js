@@ -50,5 +50,5 @@ function restyle(){
   ansOutput.style.textShadow = px1 + "px " + px2 + "px " + px3 + "px" + outputColorString;
 
   var diffBorder  = ["dotted", "dashed", "solid", "double", "groove", "ridge", "inset", "outset", "none", "hidden", "dotted dashed solid double"]
-  ansOutput.style.borderStyle = Math.floor(Math.random(diffBorder.length));
+  ansOutput.style.borderStyle = Math.floor(diffBorder[(Math.random(diffBorder.length))]);
 }
